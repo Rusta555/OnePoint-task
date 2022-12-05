@@ -25,10 +25,11 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     height: 80px;
     align-items: center;
+    
     
 }
 
@@ -73,43 +74,69 @@ body {
 
 .header .social ul li:hover {
     background-color: rgb(243, 209, 15);
+    
+
 }
-/* 
-.introduction {
-    background: url(../image/bg-picture.jpg) no-repeat ;
+
+/* introduction */
+
+
+.introduction .image {
+    
+    background-image: url(../image/bg-picture.jpg);
     background-size: cover;
-    height: 95vh;
-
-}
-
-.introduction h1 {
-    position: absolute;
+    background-repeat: no-repeat;
+    height: 85vh;
+    position: relative;
+    z-index: -2;
 }
 
 .overlay {
     width: 100%;
     height: 100%;
-    background-color: rgba(240, 248, 255, 0.534);
+    position: absolute;
+    background-color: rgba(240, 248, 255, 0.452);
+    z-index: -1;
 }
 
-main {
-    width: 100%;
+.introduction .container{
+    padding: 80px 0px;
 }
-
 
 .box {
-    max-width: 1200;
-
+    padding: 65px 0px;
 }
 
 form {
-    width: 450px;
-    height: 400px;
+    width: 350px;
+    height: 450px;
     background-color: #fff;
-    border-radius: 5px;
-
+    border-radius: 10px;
+    -webkit-box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+    -moz-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+    
 }
 
 form input {
     display: block;
-} */
+    margin: 15px auto;
+    width: 90%;
+    height: 30px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    padding: 50px 5px 5px 5px;
+}
+
+form button {
+    display: block;
+    width: 25%;
+    margin-left: 130px;
+    margin-top: 25px;
+}
