@@ -9,6 +9,8 @@
 .container {
     max-width: 1170px;
     margin: 0 auto;
+    z-index: 1;
+    display: flex;
 }
 
 header{
@@ -17,6 +19,8 @@ header{
     height: 80px;
     box-shadow: 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%), 0 2px 4px -1px rgb(0 0 0 / 20%);
     position: fixed;
+    z-index: 1;
+    
 }
 
 body {
@@ -81,62 +85,107 @@ body {
 /* introduction */
 
 
-.introduction .image {
-    
+.introduction {
+    padding: 80px 0 120px;
     background-image: url(../image/bg-picture.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 85vh;
+    background-position: center;
+    height: 72vh;
     position: relative;
-    z-index: -2;
 }
 
-.overlay {
+.introduction .overlay {
+    top: 0;
     width: 100%;
     height: 100%;
     position: absolute;
     background-color: rgba(240, 248, 255, 0.452);
-    z-index: -1;
+
+
 }
 
-.introduction .container{
-    padding: 80px 0px;
-}
+/* .introduction .container {
+    padding: 110px 0px; 
+       
+} */
 
-.box {
-    padding: 65px 0px;
-}
-
-form {
-    width: 350px;
-    height: 450px;
-    background-color: #fff;
-    border-radius: 10px;
-    -webkit-box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
-    -moz-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+.flexbox-container{
+    display: flex;
+    align-items: center
     
 }
 
-form input {
-    display: block;
-    margin: 15px auto;
-    width: 90%;
-    height: 30px;
-    padding: 10px;
+.flexbox-item{
+    width: 100%;
+    height: 600px;
+        
+}
+
+.flexbox-item-1 {
+    width: 360px;
+    height: 520px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%), 0 2px 4px -1px rgb(0 0 0 / 20%);
+    position: absolute; 
+      
+}
+
+.flexbox-item-1 {
+   font-family: 'Roboto', sans-serif ;
+
+}
+
+.box form {
+    padding: 30px;
+}
+
+
+.flexbox-item-1 .box form h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.box .item{
+    padding: 5px;
+}
+
+.box .btn {
+    width: 150px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 15px 0
+}
+
+form .item input {
+    outline: 0;
+    display: flex;
+    width: 100%;
+    margin: 0 0 15px;
     border: none;
+    border-bottom: 1px solid #d1d1d1;
+    letter-spacing: 0;
+    height: 43px;
+    font-size: 18px;
+    z-index: 1;
+}
+.box button {
+    padding: 30px 0px;
+    background-color: rgb(243, 209, 15);
+    color: white;
+    padding: 17px 32px;
+    border: none;
+    outline: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 23px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
     cursor: pointer;
 }
 
-form h2 {
-    text-align: center;
-    margin-bottom: 35px;
-    padding: 50px 5px 5px 5px;
-}
 
-form button {
-    display: block;
-    width: 25%;
-    margin-left: 130px;
-    margin-top: 25px;
+.flexbox-item-2 {
+    min-height: 100px;  
 }
